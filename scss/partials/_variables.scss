@@ -1,0 +1,22 @@
+$priColor : #1c69d4;
+$secColor: #8e8e8e;
+
+$grid-columns: 12;
+$mobile: 480px;
+$tablet: 1080px;
+$lg: 110px;
+
+
+@mixin mobile($mobile) {
+    @media only screen and (max-width: $mobile) {
+        @content;
+    }
+}
+
+
+@mixin md($tablet) {
+        @media only screen and (min-width:$mobile) and (max-width:$tablet) {
+            @content;
+        }
+}
+
